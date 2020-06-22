@@ -1,0 +1,165 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #E9E9EB;
+	display: flex;
+}
+#create,#feature{
+	background-color: #4ABDB1;
+	color: white;
+	width: 200px;
+	height: 50px;
+	margin-left: 250px;
+	padding-top: 5px;
+	text-align: center;
+	font-size: 23px;
+}
+#map,#main{
+	width: 900px;
+	margin:30px 250px;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+	/* border: red 1px solid; */
+}
+#span{
+	margin-top: 80px;
+	/* border: white 1px solid; */
+}
+h4{
+	float: left;
+	margin-right: 100px;
+}
+input{
+	width: 200px;
+	height: 30px;
+	filter: blur(0.6px);
+}
+#input1{
+	margin-left: -31px;
+}
+span{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin:30px 0px;
+	align-items: center;
+}
+#map1{
+	width: 100%;
+	margin-left: 500px;
+}
+button{
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+	border-color: white;
+	border-width: 1px;
+}
+/* button:nth-child(1){
+	background-color: #4ABDB1 ;
+}
+button:nth-child(2){
+	background-color: #E9E9EB ;
+} */
+a{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	text-decoration: none;
+}
+#main1{
+	margin-left: 30px;
+	margin-top: 30px;
+}
+.next1,.preserve{
+	background-color: #4ABDB1;
+	color: white;
+}
+.back1,.back2{
+	background-color:  #E9E9EB;
+	color: grey;
+}
+#feature{
+	margin-left: 200px;
+}
+#main{
+	width: 1000px;
+	margin-left: 200px;
+	/* position: relative; */
+}
+#main2{
+	display: flex;
+	/* margin-left: 10px; */
+	/* border: red 1px solid; */
+	float: right;
+	position: relative;
+	right: 110px;
+	width: 600px;
+	font-size: 14px;
+	/* margin-right: 200px; */
+	margin-top:30px;
+}
+.add{
+	background-color: #7A9E32;
+	border-radius: 50px;
+	margin-left: 30px;
+	position: absolute;
+	/* margin-top: 20px; */
+}
+#ull{
+	margin-top: 25px;
+}
+.preserve{
+	position: absolute;
+	bottom: 0px;
+	right: 110px;
+}
+.back2{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+#changeImg1,#changeImg2{
+	display: flex;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+img{
+	width: 210px;
+	height: 120px;
+	margin-right: 10px;
+}
+/* #img1,#img2{
+	position: absolute;
+	left: 250px;
+	top: 240px;
+} */
+#img2{
+	left: 690px;
+	top: 380px;
+}
+#changeImg1 ul,#changeImg2 ul{
+	display: flex;
+}
+#changeImg1 ul li,#changeImg2 ul li{
+	list-style-type: none;
+}
+.isActive{
+	width: 120px;
+	height: 57px;
+}
+.isShow1{
+	position: absolute;
+	left: 250px;
+	top: 240px;
+}
+.isShow2{
+	position: absolute;
+	left: 690px;
+	top: 380px;
+}

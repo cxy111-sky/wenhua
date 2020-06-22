@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>文华学院网络教学平台</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/wenhua1.css"/>
+		<script src="./vue.js"></script>
+		<script src="./wenhua1.js"></script>
+		<script src="./vue-router.js"></script>
+		<script src="wenhuaVue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<router-view></router-view>
+		</div>
+		<template id="create1">
+			<div>
+				<div id="create">
+					新建
+				</div>
+				<div id="map">
+					<div id="span">
+						<span>
+							<h4> 课程姓名: </h4>
+							<input type="text" name="" id="input1" />
+						</span>
+						<span>
+							<h4> 教师: </h4>
+							<input type="text" name="" id="" />
+						</span>
+						<span>
+							<h4> 说明: </h4>
+							<input type="text" name="" id="" />
+						</span>
+					</div>
+					
+					<div id="map1">
+					<!-- 	<router-link to="/feature" active-class="active">下一步</router-link>
+						<router-link to="/feature" active-class="active">返回</router-link> -->
+						<a href="#/feature" class="next1">下一步</a>
+						<a href="#/feature" class="back1">返回</a>
+						<!-- <button @click="nextclick">下一步</button> -->
+						<!-- <button>返回</button> -->
+					</div>		
+				</div>
+			</div>
+		</template>
+		<template id="feature1">
+			<div>
+				<div id="feature">
+					课程封面
+				</div>
+				<div id="main">
+					<div id="main1">
+						<img :src="imgSrc" style="width: 210px; height: 120px;">
+							<a href="#/document1" class="add">
+								<i class="iconfont iconadd-sy"></i>
+								上传文件
+							</a>
+						<div id="main2">
+							<ul id="ull">
+								<li>作为课程的宣传图，用于课程主页的显示</li>
+								<li>支持jpg、jpeg、gif、png格式</li>
+								<li>文件小于4MB,最好宽1000*高600以上像素</li>
+								<li>您可以自己上传图片，也可以从下面这些图片中选择使用</li>
+							</ul>
+							<a href="#/preserve" class="preserve">保存</a>
+							<a href="#/create" class="back2">返回</a>
+						</div>
+					</div>
+					<div id="changeImg1">
+						<ul>
+							<li v-for="(item,index) in imgSrc1">
+								<img :src="item" :class="{isActive:index==2||index==1,isShow1:index==2}" @click="change1(index)"/>
+							</li>
+						</ul>
+					</div>
+					<div id="changeImg2">
+						<ul>
+							<li v-for="(item,index) in imgSrc2">
+								<img :src="item" :class="{isActive:index==3||index==4,isShow2:index==4}" @click="change2(index)"/>
+							</li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+		</template>
+		<template id="document1">
+			<h2>我是document1界面</h2>
+		</template>
+	</body>
+</html>
